@@ -1,3 +1,16 @@
 from django.contrib import admin
+from .models import RightWords, WrongWords
 
-# Register your models here.
+
+class RightWordsAdmin(admin.ModelAdmin):
+    pass
+
+
+admin.site.register(RightWords, RightWordsAdmin)
+
+
+class WrongWordsAdmin(admin.ModelAdmin):
+    pass
+
+
+admin.site.register(WrongWords, WrongWordsAdmin)
