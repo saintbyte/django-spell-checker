@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Spell Checker</title>
+</head>
+<body>
+<h1>Django Spell Checker</h1>
+Слов в словаре: {{ right_words_count }}<br/><br/>
+<form method="post" action="spell/">
+{% csrf_token %}
+<textarea id="spellit" name="text" style="width:80%; height: 200px;">Пришло теплое лето. На лисной опушки распускаюца колоколчики, незабутки, шыповник.Белые ромашки пратягивают к сонцу свои нежные лепески. Вылитают из уютных гнёзд птинцы.    У зверей взраслеет смена. Мидвежата старше всех.</textarea>
+<br/><br/>
+<input type="submit" value="отправить на проверку" id="submit">
+</form>
+<script>
+    var cnt = 0;
+    document.getElementById('submit').addEventListener('click', function (e) {
+
+    });
+</script>
+</body>
+</html>
