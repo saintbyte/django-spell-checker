@@ -4,3 +4,7 @@ recursive-exclude * *.py[co]
 recursive-exclude * .*.sw*
 recursive-include docs *.md *.py
 
+recursive-include management  *
+recursive-include migrations  *
+recursive-include static  *
+recursive-include templates  *

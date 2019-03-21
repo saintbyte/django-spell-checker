@@ -29,9 +29,11 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
-        'Django>=2.0',
+        'Language :: Spell',
     ],
     install_requires=[
         'Django>=2.0',
     ],
+    package_dir = {'': 'django_spell_checker'},
+    zip_safe=False,
 )
