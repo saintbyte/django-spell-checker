@@ -1,0 +1,15 @@
+{% extends "django_spell_checker/base.html" %}
+{% block content %}
+Ошибок/неизвестных слов найдено: {{ error_words_count }}<br/><br/>
+<div style="border: 1px dashed grey; margin: 5px; padding: 5px">{{ text | linebreaksbr }}</div>
+<br /><br />
+{% if error_words_count != 0 %}
+Ошибки/неизвестные слова:
+<ol>
+{% for w in wrong_words %}
+<li>{{ w }}</li>
+{% endfor %}
+</ol>
+{% endif %}
+<div style="border: 1px dashed grey; margin: 5px; padding: 5px">{{ json_text | linebreaksbr }}</div>
+{% endblock %}

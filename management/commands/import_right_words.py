@@ -1,6 +1,7 @@
 __author__ = 'sb'
 from django.core.management.base import BaseCommand
 from django_spell_checker.models import RightWords
+from django.core.management import call_command
 from django.conf import settings
 import sys
 
@@ -30,6 +31,7 @@ class Command(BaseCommand):
                      self.stdout.write('Exception:')
                      self.stdout.write(str(e))
                      self.stdout.write(str(v))
-
         fh.close()
+        self.stdout.write(self.style.SUCCESS('create_custom_index_right_words'))
+        call_command('create_custom_index_right_words')
         self.stdout.write(self.style.SUCCESS('End'))
