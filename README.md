@@ -29,3 +29,7 @@ path('django_spell_checker/', include('django_spell_checker.urls')),
 ### Установка standalone
  
 Можно попробывать from django_spell_checker import Spell
+
+
+### Посмотреть в действии
+YouTube: https://youtu.be/qYckTr2RcJw
