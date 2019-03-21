@@ -1,19 +1,37 @@
-from distutils.core import setup
-import setuptools
-import setuptools.command.test
+import os
+from setuptools import find_packages, setup
 
-setuptools.setup(
+with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
+    README = readme.read()
+
+os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
+
+setup(
     name='django_spell_checker',
-    version='1.0',
-    url='https://github.com/saintbyte/django-spell-checker',
-    license='BSD',
-    author='sb',
-    author_email='admin@ural.im',
-    description='',
+    version='0.1',
+    packages=find_packages(),
+    include_package_data=True,
+    license='BSD License',
+    description='A simple Django app to spell text.',
+    long_description=README,
+    url='https://mimobaka.ru/opensource/',
+    author='Yegor',
+    author_email='all@mimobaka.ru',
+    classifiers=[
+        'Environment :: Web Environment',
+        'Framework :: Django',
+        'Framework :: Django :: 2.0',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: BSD License',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Topic :: Internet :: WWW/HTTP',
+        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+        'Django>=2.0',
+    ],
     install_requires=[
         'Django>=2.0',
     ],
-    packages=setuptools.find_packages(exclude=['ez_setup', 't', 't.*']),
-    zip_safe=False,
-    python_requires=">=3.5",
 )
