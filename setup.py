@@ -34,5 +34,6 @@ setup(
     install_requires=[
         'Django>=2.0',
     ],
+    #package_dir = {'': 'django_spell_checker'},
     zip_safe=False,
 )
