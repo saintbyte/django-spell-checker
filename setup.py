@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='django_spell_checker',
-    version='1',
+    version='1.0',
     url='https://github.com/saintbyte/django-spell-checker',
     license='BSD',
     author='sb',
@@ -11,6 +11,6 @@ setup(
     install_requires=[
         'Django>=2.0',
     ],
-    include_package_data=True,
+    zip_safe=False,
     python_requires=">=3.5",
 )

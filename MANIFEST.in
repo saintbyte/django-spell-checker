@@ -1,6 +1,10 @@
+global-exclude __pycache__ *.pyc
 recursive-include management
 recursive-include migrations
 recursive-include static
 recursive-include templates
 include __init__.py
 recursive-include docs *.md *.py
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * .*.sw*
