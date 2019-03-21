@@ -1,0 +1,6 @@
+recursive-include management
+recursive-include migrations
+recursive-include static
+recursive-include templates
+include __init__.py
+recursive-include docs *.md *.py
