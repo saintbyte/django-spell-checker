@@ -1,9 +1,9 @@
-#Django Spell Checker
+# Django Spell Checker
 
-###Зависимости
+### Зависимости
 Зависимости: python 3, django > 2, json 
 
-###Установка к Django
+### Установка к Django
 1. Получаем копию
 pip install git+https://github.com/saintbyte/django-spell-checker
 или 
@@ -26,6 +26,6 @@ path('django_spell_checker/', include('django_spell_checker.urls')),
 7. Делаем ./manage.py runserver и заходим http://127.0.0.1:8000/django_spell_checker/
 
 
-###Установка standalone
+### Установка standalone
  
 Можно попробывать from django_spell_checker import Spell
