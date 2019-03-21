@@ -10,7 +10,6 @@ setup(
     description='',
     install_requires=[
         'Django>=2.0',
-        'json',
     ],
     python_requires=">=3.5",
 )
